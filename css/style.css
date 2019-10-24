@@ -123,7 +123,7 @@ section#cv {
   position: relative;
   background-color: var(--light-blue);
   width: 101vw;
-  height: 900px;
+  height: 1000px;
   margin-top: -50px;
 }
 
@@ -234,7 +234,8 @@ section#cv {
   margin: 2px;
 }
 
-.design-skills h2 {
+.design-skills h2,
+.hobby h2 {
   font-family: "Anton";
   font-size: 40px;
   letter-spacing: 7px;
@@ -242,9 +243,11 @@ section#cv {
   margin-bottom: 0;
 }
 
-.education {
+.education,
+.work {
   padding-top: 80px;
   text-align: center;
+  line-height: 5px;
 }
 
 .education img {
@@ -252,16 +255,28 @@ section#cv {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 35px;
+}
+
+.work img {
+  width: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
 }
 
 .education .school h3,
-.education .school h4 {
+.education .school h4,
+.work-experience h3,
+.work-experience h4 {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 12px;
 }
 
-.education .school h2 {
+.education .school h2,
+.work-experience h2 {
   font-family: "Roboto";
   font-size: 14px;
 }
@@ -269,11 +284,71 @@ section#cv {
 .education .school + .school::before {
   content: "";
   width: 0;
-  height: 60px;
+  height: 90px;
   border: #0034e3 solid 0.5px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hobby h2 {
+  padding-left: 260px;
+  padding-bottom: 18px;
+}
+
+.hobby div img {
+  width: 60px;
+  margin: 0;
+  padding: 3px;
+}
+
+.hobby p {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 12px;
+  margin: 0;
+}
+
+.hobby div {
+  display: block;
+  text-align: center;
+}
+
+.hobby div:nth-child(2) {
+  margin-left: -800px;
+}
+
+.hobby div:nth-child(3) {
+  margin-left: -500px;
+  margin-top: -50px;
+}
+
+.hobby div:nth-child(4) {
+  margin-left: -200px;
+  margin-top: -150px;
+}
+
+.hobby div:nth-child(5) {
+  margin-left: -700px;
+  margin-top: 100px;
+}
+
+.hobby div:nth-child(6) {
+  margin-left: -300px;
+  margin-top: -130px;
+}
+
+button {
+  font-family: "Roboto";
+  border: 1px solid var(--dark-blue);
+  background-color: transparent;
+  color: var(--dark-blue);
+  font-size: 18px;
+  padding: 10px 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
 }
 
 /* MEDIUM SCREENS */
