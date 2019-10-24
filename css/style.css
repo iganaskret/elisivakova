@@ -410,6 +410,230 @@ button {
     margin-top: 15px;
     font-size: 11px;
   }
+
+  section#cv {
+    position: relative;
+    background-color: var(--light-blue);
+    width: 101vw;
+    height: 1000px;
+    margin-top: -50px;
+  }
+
+  .cvcvcv h3 {
+    position: absolute;
+    font-family: "Anton";
+    letter-spacing: 3px;
+  }
+
+  .cvcvcv h3:nth-child(1) {
+    left: 44%;
+    top: -85px;
+  }
+
+  .cvcvcv h3:nth-child(2) {
+    left: 46%;
+    top: -55px;
+  }
+
+  .cvcvcv h3:nth-child(3) {
+    left: 48%;
+    top: -25px;
+  }
+
+  .cvcvcv h3:nth-child(4) {
+    left: 50%;
+    top: 5px;
+  }
+
+  .cv-grid {
+    display: grid;
+    grid-template-columns: 750px 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .design-skills {
+    font-family: "Roboto";
+    padding-top: 80px;
+    padding-left: 150px;
+  }
+
+  .design-skills ul {
+    list-style: none;
+    padding-left: 100px;
+    padding-top: 0;
+    font-size: 15px;
+  }
+
+  .design-skills .skill-level {
+    display: inline-block;
+    text-align: right;
+    font-size: 10px;
+    border-bottom: var(--dark-blue) 1px solid;
+  }
+
+  .design-skills li:nth-child(1) span {
+    width: 300px;
+  }
+
+  .design-skills li:nth-child(2) span {
+    width: 255px;
+  }
+
+  .design-skills li:nth-child(3) span {
+    width: 210px;
+  }
+
+  .design-skills li:nth-child(4) span {
+    width: 150px;
+  }
+
+  .design-skills li:nth-child(5) span {
+    width: 90px;
+  }
+
+  .design-skills li:nth-child(6) span {
+    width: 120px;
+  }
+
+  .design-skills li:nth-child(7) span {
+    width: 249px;
+  }
+
+  .design-skills li:nth-child(8) span {
+    width: 240px;
+  }
+
+  .design-skills li:nth-child(9) span {
+    width: 225px;
+  }
+
+  .design-skills li:nth-child(10) span {
+    width: 45px;
+  }
+
+  .design-skills li:nth-child(11) span {
+    width: 60px;
+  }
+
+  .design-skills li:nth-child(12) span {
+    width: 150px;
+  }
+
+  .design-skills .skill-name {
+    display: inline-block;
+    width: 100px;
+    padding: 0;
+    margin: 2px;
+  }
+
+  .design-skills h2,
+  .hobby h2 {
+    font-family: "Anton";
+    font-size: 40px;
+    letter-spacing: 7px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .education,
+  .work {
+    padding-top: 80px;
+    text-align: center;
+    line-height: 5px;
+  }
+
+  .education img {
+    width: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+  }
+
+  .work img {
+    width: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+  }
+
+  .education .school h3,
+  .education .school h4,
+  .work-experience h3,
+  .work-experience h4 {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  .education .school h2,
+  .work-experience h2 {
+    font-family: "Roboto";
+    font-size: 14px;
+  }
+
+  .education .school + .school::before {
+    content: "";
+    width: 0;
+    height: 90px;
+    border: #0034e3 solid 0.5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hobby h2 {
+    padding-left: 260px;
+    padding-bottom: 18px;
+  }
+
+  .hobby div img {
+    width: 60px;
+    margin: 0;
+    padding: 3px;
+  }
+
+  .hobby p {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .hobby div {
+    display: block;
+    text-align: center;
+  }
+
+  .hobby div:nth-child(2) {
+    margin-left: -800px;
+  }
+
+  .hobby div:nth-child(3) {
+    margin-left: -500px;
+    margin-top: -50px;
+  }
+
+  .hobby div:nth-child(4) {
+    margin-left: -200px;
+    margin-top: -150px;
+  }
+
+  .hobby div:nth-child(5) {
+    margin-left: -700px;
+    margin-top: 100px;
+  }
+
+  .hobby div:nth-child(6) {
+    margin-left: -300px;
+    margin-top: -130px;
+  }
+
+  button {
+    font-size: 18px;
+    margin-top: 50px;
+  }
 }
 
 /* BIG SCREENS */
