@@ -1,0 +1,128 @@
+body {
+    width: 99%;
+ }
+     
+/* HEADER */
+header {
+    grid-area: header-area;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "logo-area nav-area";
+}
+
+.logo {
+    grid-area: logo-area;
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 35px;
+    text-align: left;
+}
+
+.navigation {
+    grid-area: nav-area;
+    text-align: right;
+    padding-top: 12px;
+    padding-right: 30px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+a {
+    font-family: 'Anton';
+    text-decoration: none;
+    color: #0034E3;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+     
+a:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+
+
+/* ABOUT ME PAGE */        
+h1 {
+    color: #0034E3;
+    font-family: 'Anton';
+    letter-spacing: 20px;
+    font-size: 70px;
+    font-weight: 100;
+}
+
+
+img {
+    width: 600px;
+    height: auto;
+}
+
+.eli-descp {
+    font-size: 20px;
+    color: #0034E3;
+    font-family: 'Roboto';
+    line-height: 1.7;
+    padding-left: 45px;
+    font-weight: 300;
+}
+
+.subline1 {
+    height: 75px;
+    width: 1px;
+    border-left: 0.07em solid #0034E3;
+    margin-left: 30px;
+}
+
+.eli-descp2 {
+    font-size: 18px;
+    color: #0034E3;
+    font-family: 'Roboto';
+    line-height: 1.7;
+    padding-left: 45px;
+    font-weight: 300;
+}
+
+.subline2 {
+    height: 75px;
+    width: 1px;
+    border-left: 0.07em solid #0034E3;
+    margin-left: 30px;
+}
+
+.contact-inf {
+    font-size: 13px;
+}
+
+
+
+
+/* FOOTER */
+footer {
+    grid-area: footer-area;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "copyright contact";
+}
+.footer {
+    font-size: 12px;
+    color: #0034E3;
+    font-family: 'Roboto';
+    width: 300;
+    
+}
+
+.f-left {
+    grid-area: copyright;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.f-right {
+    grid-area: contact;
+    text-align: right;
+    padding-right: 25px;
+}
