@@ -43,6 +43,10 @@ header {
   margin-left: 30px;
 }
 
+.navigation .active {
+  text-decoration: underline;
+}
+
 a {
   font-family: "Anton";
   text-decoration: none;
@@ -125,14 +129,29 @@ a:visited {
   font-size: 11px;
 }
 
+.icons img {
+  width: 3%;
+  position: fixed;
+  z-index: 999;
+  left: 30px;
+  top: 480px;
+}
+
+.icons img:first-of-type {
+  top: 400px;
+}
+
+.icons img:last-of-type {
+  top: 560px;
+}
+
 /* CV */
 
 section#cv {
   position: relative;
   background-color: var(--light-blue);
-  width: 101vw;
-  height: 1000px;
-  margin-top: -50px;
+  height: auto;
+  margin-top: -50px -5px 0;
 }
 
 .cvcvcv h3 {
@@ -175,7 +194,7 @@ section#cv {
 
 .design-skills ul {
   list-style: none;
-  padding-left: 100px;
+  padding-left: 40px;
   padding-top: 0;
   font-size: 15px;
 }
@@ -188,51 +207,51 @@ section#cv {
 }
 
 .design-skills li:nth-child(1) span {
-  width: 300px;
+  width: 250px;
 }
 
 .design-skills li:nth-child(2) span {
-  width: 255px;
+  width: 205px;
 }
 
 .design-skills li:nth-child(3) span {
-  width: 210px;
+  width: 160px;
 }
 
 .design-skills li:nth-child(4) span {
-  width: 150px;
+  width: 100px;
 }
 
 .design-skills li:nth-child(5) span {
-  width: 90px;
+  width: 40px;
 }
 
 .design-skills li:nth-child(6) span {
-  width: 120px;
+  width: 70px;
 }
 
 .design-skills li:nth-child(7) span {
-  width: 249px;
+  width: 200px;
 }
 
 .design-skills li:nth-child(8) span {
-  width: 240px;
+  width: 190px;
 }
 
 .design-skills li:nth-child(9) span {
-  width: 225px;
+  width: 275px;
 }
 
 .design-skills li:nth-child(10) span {
-  width: 45px;
+  width: 5px;
 }
 
 .design-skills li:nth-child(11) span {
-  width: 60px;
+  width: 10px;
 }
 
 .design-skills li:nth-child(12) span {
-  width: 150px;
+  width: 100px;
 }
 
 .design-skills .skill-name {
@@ -359,6 +378,25 @@ button {
   margin-top: 50px;
 }
 
+/* CV */
+
+section#cv {
+  width: 100%;
+  margin: -5px;
+  margin-top: -150px;
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.design-skills {
+  font-family: "Roboto";
+  padding-top: 80px;
+  padding-left: 10px;
+}
+
 /* MEDIUM SCREENS */
 
 @media all and (min-width: 700px) {
@@ -417,6 +455,24 @@ button {
   .eli-descp2 .contact-inf p {
     margin-top: 15px;
     font-size: 11px;
+  }
+
+  /* ICONS */
+
+  .icons img {
+    width: 1.5%;
+    position: fixed;
+    z-index: 999;
+    left: 30px;
+    top: 480px;
+  }
+
+  .icons img:first-of-type {
+    top: 400px;
+  }
+
+  .icons img:last-of-type {
+    top: 560px;
   }
 
   section#cv {
