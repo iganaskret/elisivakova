@@ -428,6 +428,11 @@ section#cv {
   font-size: 15px;
 }
 
+.andry-main a {
+  font-family: "Roboto";
+  margin-top: 12px;
+}
+
 /* MEDIUM SCREENS */
 
 @media all and (min-width: 700px) {
@@ -792,8 +797,8 @@ section#cv {
     font-family: "Roboto";
     font-size: 9px;
     position: absolute;
-    top: 12%;
-    right: 17%;
+    top: 7%;
+    right: 2%;
   }
 
   .andry-main .details h3 {
@@ -805,8 +810,8 @@ section#cv {
     letter-spacing: 5px;
     font-size: 75px;
     position: absolute;
-    top: 3%;
-    right: 23%;
+    top: -1%;
+    right: 10%;
   }
 
   .andry-main div p {
@@ -815,6 +820,13 @@ section#cv {
     color: black;
     font-family: "Roboto";
     font-size: 15px;
+  }
+
+  .andry-main a {
+    font-size: 15px;
+    position: absolute;
+    top: 11%;
+    right: 20%;
   }
 }
 
@@ -867,6 +879,33 @@ section#cv {
   .eli-descp2 .contact-inf p {
     margin-top: 15px;
     font-size: 13px;
+  }
+
+  .andry-main h1 {
+    font-family: "Anton";
+    letter-spacing: 5px;
+    font-size: 75px;
+    position: absolute;
+    top: 3%;
+    right: 23%;
+  }
+
+  .andry-main a {
+    font-size: 15px;
+    position: absolute;
+    top: 15%;
+    right: 30%;
+  }
+
+  .andry-main .details {
+    border-left: 1px solid var(--dark-blue);
+    padding: 0 20px;
+    color: black;
+    font-family: "Roboto";
+    font-size: 9px;
+    position: absolute;
+    top: 12%;
+    right: 18%;
   }
 }
 
