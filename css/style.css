@@ -39,6 +39,10 @@ header {
   right: 20px;
 }
 
+.navigation a + a {
+  margin-left: 30px;
+}
+
 a {
   font-family: "Anton";
   text-decoration: none;
@@ -49,6 +53,10 @@ a {
 a:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+
+a:visited {
+  color: var(--dark-blue);
 }
 
 /* ABOUT ME PAGE */
@@ -633,6 +641,43 @@ button {
   button {
     font-size: 18px;
     margin-top: 50px;
+  }
+
+  /* PORTFOLIO */
+  .portfolio-grid {
+    margin: 30px -5px;
+    padding: 30px 0;
+    grid-gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .portfolio-grid div img {
+    width: 100%;
+  }
+
+  .portfolio-grid div:hover {
+    background-color: var(--dark-blue);
+    position: relative;
+    cursor: pointer;
+  }
+
+  .portfolio-grid div:hover img {
+    opacity: 0.001;
+  }
+
+  .portfolio-grid div:hover::after {
+    content: "Andry Deliana";
+    font-family: "Anton";
+    text-decoration: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 40%;
+    left: 28%;
+    font-size: 45px;
+    color: white;
+    letter-spacing: 3px;
   }
 }
 
