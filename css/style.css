@@ -679,6 +679,56 @@ button {
     color: white;
     letter-spacing: 3px;
   }
+
+  /* ANDRY */
+
+  .andry-main img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .andry-main img:first-of-type {
+    width: 50%;
+    margin-top: 70px;
+    margin-left: 70px;
+  }
+
+  .andry-main {
+    position: relative;
+  }
+
+  .andry-main .details {
+    border-left: 1px solid var(--dark-blue);
+    padding: 0 20px;
+    color: black;
+    font-family: "Roboto";
+    font-size: 9px;
+    position: absolute;
+    top: 12%;
+    right: 17%;
+  }
+
+  .andry-main .details h3 {
+    font-weight: 100;
+  }
+
+  .andry-main h1 {
+    font-family: "Anton";
+    letter-spacing: 5px;
+    font-size: 75px;
+    position: absolute;
+    top: 3%;
+    right: 23%;
+  }
+
+  .andry-main div p {
+    margin: 40px 150px;
+    text-align: justify;
+    color: black;
+    font-family: "Roboto";
+    font-size: 15px;
+  }
 }
 
 /* BIG SCREENS */
