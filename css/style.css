@@ -3,6 +3,11 @@
   --dark-blue: #0034e3;
 }
 
+/* section cv margin i body margin 0 importnat */
+body {
+  margin: 0 !important;
+}
+
 html {
   box-sizing: border-box;
   margin: 0;
@@ -151,7 +156,7 @@ section#cv {
   position: relative;
   background-color: var(--light-blue);
   height: auto;
-  margin-top: -50px -5px 0;
+  margin: -50px -5px 0;
 }
 
 .cvcvcv h3 {

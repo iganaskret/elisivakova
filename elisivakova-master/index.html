@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <title>Eliška Siváková</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/fav-icon.svg">
+    <!-- Go to about me page after animation will be done -->
+    <meta http-equiv="refresh" content="4; url=about.html">
+     
+<style>
+body {
+    background-color: #0034E3;
+}    
+
+/* SVG */
+.wrapper {
+    width: 70px;;
+    height: auto;
+    margin: auto;
+    padding-top: 420px;
+}
+
+svg {
+    stroke: #fff;
+    fill: transparent;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    to {
+        stroke-dashoffset: 0;
+}
+}
+</style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!--   SVG   -->
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 28.35 28.35" style="enable-background:new 0 0 28.35 28.35;" xml:space="preserve">
+        <style type="text/css">
+            .st0{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;}
+        </style>
+        <path class="st0" d="M9.08,3.84l-7.91,7.2l9.79-1.23L4.61,22.2c3.63-1.53,7.25-3.05,10.88-4.58c3.36-1.41,6.71-2.83,10.07-4.24
+            c0.54,2.03,1.08,4.06,1.62,6.1l-4.09-0.71"/>
+        </svg>
+    </div>
+
+</body>
+</html>
