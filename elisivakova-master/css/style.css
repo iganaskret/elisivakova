@@ -118,7 +118,7 @@ a:visited {
 .eli-descp {
   position: absolute;
   left: 12%;
-  top: 15%;
+  top: 13%;
 }
 
 .eli-descp2 {
@@ -905,6 +905,15 @@ section#cv {
     position: absolute;
     top: 8%;
     right: 18%;
+  }
+
+  section#cv {
+    position: relative;
+    background-color: var(--light-blue);
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    margin-top: -50px;
   }
 
   .cv-grid {
