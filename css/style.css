@@ -4,11 +4,9 @@
   --design-skill: 0px;
 }
 
-body {
-  margin: 0 !important;
-}
-
-body {
+html,
+body,
+main {
   margin: 0 !important;
 }
 
@@ -171,6 +169,20 @@ section#cv {
   letter-spacing: 3px;
 }
 
+@keyframes animatecv {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animatecv {
+  opacity: 0;
+  animation: animatecv 1s forwards ease-in-out;
+}
+
 .cvcvcv h3:nth-child(1) {
   left: 44%;
   top: -85px;
@@ -179,16 +191,19 @@ section#cv {
 .cvcvcv h3:nth-child(2) {
   left: 46%;
   top: -55px;
+  animation-delay: 1s;
 }
 
 .cvcvcv h3:nth-child(3) {
   left: 48%;
   top: -25px;
+  animation-delay: 2s;
 }
 
 .cvcvcv h3:nth-child(4) {
   left: 50%;
   top: 5px;
+  animation-delay: 3s;
 }
 
 .cv-grid {
@@ -217,8 +232,7 @@ section#cv {
 }
 
 .design-skills li:nth-child(1) span {
-  animation: test 2s forwards ease-in-out;
-  width: 200px;
+  --design-skill: 55%;
 }
 
 .animate {
@@ -230,52 +244,52 @@ section#cv {
     width: 0;
   }
   to {
-    width: 70%;
+    width: var(--design-skill);
   }
 }
 
 .design-skills li:nth-child(2) span {
-  width: 195px;
+  --design-skill: 50%;
 }
 
 .design-skills li:nth-child(3) span {
-  width: 160px;
+  --design-skill: 47.2%;
 }
 
 .design-skills li:nth-child(4) span {
-  width: 100px;
+  --design-skill: 38.8%;
 }
 
 .design-skills li:nth-child(5) span {
-  width: 40px;
+  --design-skill: 27.7%;
 }
 
 .design-skills li:nth-child(6) span {
-  width: 70px;
+  --design-skill: 16.7%;
 }
 
 .design-skills li:nth-child(7) span {
-  width: 200px;
+  --design-skill: 49%;
 }
 
 .design-skills li:nth-child(8) span {
-  width: 190px;
+  --design-skill: 22.2%;
 }
 
 .design-skills li:nth-child(9) span {
-  width: 168px;
+  --design-skill: 46.1%;
 }
 
 .design-skills li:nth-child(10) span {
-  width: 5px;
+  --design-skill: 41.6%;
 }
 
 .design-skills li:nth-child(11) span {
-  width: 10px;
+  --design-skill: 8.3%;
 }
 
 .design-skills li:nth-child(12) span {
-  width: 100px;
+  --design-skill: 27.7%;
 }
 
 .design-skills .skill-name {
@@ -606,54 +620,6 @@ section#cv {
     text-align: right;
     font-size: 10px;
     border-bottom: var(--dark-blue) 1px solid;
-  }
-
-  .design-skills li:nth-child(1) span {
-    width: 300px;
-  }
-
-  .design-skills li:nth-child(2) span {
-    width: 255px;
-  }
-
-  .design-skills li:nth-child(3) span {
-    width: 210px;
-  }
-
-  .design-skills li:nth-child(4) span {
-    width: 150px;
-  }
-
-  .design-skills li:nth-child(5) span {
-    width: 90px;
-  }
-
-  .design-skills li:nth-child(6) span {
-    width: 120px;
-  }
-
-  .design-skills li:nth-child(7) span {
-    width: 249px;
-  }
-
-  .design-skills li:nth-child(8) span {
-    width: 240px;
-  }
-
-  .design-skills li:nth-child(9) span {
-    width: 225px;
-  }
-
-  .design-skills li:nth-child(10) span {
-    width: 45px;
-  }
-
-  .design-skills li:nth-child(11) span {
-    width: 60px;
-  }
-
-  .design-skills li:nth-child(12) span {
-    width: 150px;
   }
 
   .design-skills .skill-name {

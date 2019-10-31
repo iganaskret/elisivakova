@@ -19,8 +19,9 @@ function btn3() {
 let root = document.documentElement;
 
 // get the element to animate
-var element = document.getElementById("test");
-var elementHeight = element.clientHeight;
+let element = document.querySelector("#test");
+let elements = document.querySelectorAll(".skill-level");
+let elementHeight = element.clientHeight;
 
 // listen for scroll event and call animate function
 document.addEventListener("scroll", animate);
@@ -28,14 +29,14 @@ document.addEventListener("scroll", animate);
 // check if element is in view
 function inView() {
   // get window height
-  var windowHeight = window.innerHeight;
+  let windowHeight = window.innerHeight;
   // get number of pixels that the document is scrolled
-  var scrollY = window.scrollY || window.pageYOffset;
+  let scrollY = window.scrollY || window.pageYOffset;
 
   // get current scroll position (distance from the top of the page to the bottom of the current viewport)
-  var scrollPosition = scrollY + windowHeight;
+  let scrollPosition = scrollY + windowHeight;
   // get element position (distance from the top of the page to the bottom of the element)
-  var elementPosition =
+  let elementPosition =
     element.getBoundingClientRect().top + scrollY + elementHeight;
 
   // is scroll position greater than element position? (is element in view?)
@@ -51,7 +52,9 @@ function animate() {
   // is element in view?
   if (inView()) {
     // element is in view, add class to element
-    root.style.setProperty("--design-skill", "300px");
-    element.classList.add("animate");
+    // root.style.setProperty("--design-skill", "55%");
+    elements.forEach(function animate(e) {
+      e.classList.add("animate");
+    });
   }
 }
